@@ -1,0 +1,120 @@
+:root{
+    background-color: #B0E0E6;
+}
+body{
+    margin: 0px;
+}
+* {
+    box-sizing: border-box;
+}
+header {
+    margin: 0px;
+    width: 100%;
+    height: 20px;
+}
+#myList{
+    margin: 10px 40px 40px 40px;
+    background-color: #FFFAF0;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px gray;
+}
+fieldset legend {
+    margin: auto;
+    width: 50%;
+}
+fieldset legend h2{
+    font-family: 'Pangolin', cursive;
+    padding: 10px;
+    text-align: center;
+    background-color: #1e3799;
+    font-size: 30px;
+    color: white;
+}
+#inputItem{
+    width: 86%;
+    padding: 10px;
+    height: 30px;
+    float: left;
+    margin: 0px 0px 20px 20px;
+}
+#addButton{
+    width: 8%;
+    padding: 2px;
+    height: 30px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #0c2461;
+    font-family: 'Baloo Tamma 2',cursive;
+    float: right;
+    color: white;
+    margin: 0px 20px 20px 0px;
+}
+#addButton:hover{
+    color: #000000;
+    animation-name: background-color;
+    animation-duration: 450ms;
+    animation-fill-mode: forwards;
+}
+@keyframes background-color{
+    100%{
+        background-color: #82ccdd;
+    }
+}
+li{
+    display: block;
+    cursor: pointer;
+    position: relative;
+    width: 90%;
+    font-family: 'Rubik',sans-serif;
+    padding: 10px 12px 10px 50px;
+    list-style-type: none;
+    color: white;
+    background-color: rgba(32, 122, 207, 0.95);
+    border-color: #0c2461;
+    border-radius: 8px;
+    font-size: 20px;
+    margin: 10px 30px;
+    transition: 1.5s;
+    top: 0;
+}
+li:hover{ 
+    animation-name: li-background-color;
+    animation-duration: 450ms;
+    animation-fill-mode: forwards;
+}
+@keyframes li-background-color{
+    100%{
+        background-color: rgba(23, 0, 234, 0.342);
+        border-color: #000000;
+    }
+}
+.closeBtn{
+    cursor: pointer;
+    width: 4%;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+    font-size: 12px;
+}
+.done{
+    background-color: black  !important;
+}
+.clear{
+    display: none;
+}
+.tickBox{
+    background-color: greenyellow;
+    color: black;
+    border-radius: 50%;
+    border: 2px double green;
+    font-size: 20px;
+    width: 28px;
+    height: 28px;
+    left: 10px;
+    top: 10px;
+    bottom: 10px;
+    float: left;
+}
